@@ -1,0 +1,21 @@
+---
+  - name: "Wwtime-city"
+    signals:
+      - order: "what time is it in {{city}}"
+    neurons:
+      - wwtime:
+          gmaps_api_key: "{{gmaps_api_key}}"
+          local: "Paris France"
+          args:
+            - city
+          file_template: "templates/en_wwtime.j2"
+
+  - name: "Wwtime-city-boton"
+    signals:
+      - order: "boston time"
+    neurons:
+      - wwtime:
+          gmaps_api_key: "{{gmaps_api_key}}"
+          city: "New york city"
+          local: "Paris France"
+          file_template: "templates/en_wwtime.j2"
