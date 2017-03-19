@@ -79,7 +79,7 @@ Get a city by argument set in brain:
 ```yaml
   - name: "Wwtime-city-boton"
     signals:
-      - order: "heure boston"
+      - order: "time in boston"
     neurons:
       - wwtime:
           gmaps_api_key: "{{gmaps_api_key}}"
