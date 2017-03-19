@@ -26,7 +26,7 @@ Or follow [documentation here](https://developers.google.com/maps/documentation/
 ## Installation
 
 ```
-kalliope install --git-url https://github.com/bacardi55/kalliope-wwtimes.git
+kalliope install --git-url https://github.com/bacardi55/kalliope-wwtime.git
 ```
 
 
