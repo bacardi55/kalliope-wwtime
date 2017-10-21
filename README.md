@@ -69,8 +69,7 @@ Get a city by argument in order
       - wwtime:
           gmaps_api_key: "{{gmaps_api_key}}"
           local: "Paris France"
-          args:
-            - city
+          city: "{{city}}"
           file_template: "templates/fr_wwtime.j2"
 ```
 
