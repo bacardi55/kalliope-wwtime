@@ -1,10 +1,10 @@
 ---
   - name: "Wwtime-city"
     signals:
-      - order: "quel heure est-il à {{city}}"
+      - order: "Donne moi l'heure à {{city}}"
     neurons:
       - wwtime:
-          gmaps_api_key: "{{gmaps_api_key}}"
+          gmaps_api_key: "GMAPS_API_KEY"
           local: "Paris France"
           city: "{{city}}"
           file_template: "templates/fr_wwtime.j2"
@@ -14,7 +14,7 @@
       - order: "heure boston"
     neurons:
       - wwtime:
-          gmaps_api_key: "{{gmaps_api_key}}"
-          city: "bulgarie"
+          gmaps_api_key: "GMAPS_API_KEY"
+          city: "boston"
           local: "Paris France"
           file_template: "templates/fr_wwtime.j2"

@@ -64,10 +64,10 @@ Get a city by argument in order
 ```yaml
   - name: "Wwtime-city"
     signals:
-      - order: "what time is it in {{city}}"
+      - order: "Give me the time in {{city}}"
     neurons:
       - wwtime:
-          gmaps_api_key: "{{gmaps_api_key}}"
+          gmaps_api_key: "GMAPS_API_KEY"
           local: "Paris France"
           city: "{{city}}"
           file_template: "templates/fr_wwtime.j2"
@@ -81,7 +81,7 @@ Get a city by argument set in brain:
       - order: "time in boston"
     neurons:
       - wwtime:
-          gmaps_api_key: "{{gmaps_api_key}}"
+          gmaps_api_key: "GMAPS_API_KEY"
           city: "boston MA"
           local: "Paris France"
           file_template: "templates/fr_wwtime.j2"
