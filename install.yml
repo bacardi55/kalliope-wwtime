@@ -9,3 +9,4 @@
       pip:
         name: googlemaps
         version: 2.4.5
+        executable: pip3
